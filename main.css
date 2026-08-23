@@ -1,0 +1,127 @@
+/* Styles the main body section */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(207, 202, 202);
+    color: black;
+}
+
+/* Styles the nav bar for the users to get around my webpag */
+.navigationBar{
+    display: flex;
+    /* Space out my content evenly */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgb(69, 75, 73);
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.navigationLink{
+    display: flex;
+    gap: 25px;
+}
+
+.navigationLink a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* Added a hover style to give the user a nice overall UI */
+.navigationLink a:hover{
+    color: #4f505f;
+}
+
+/* Styles the topage section */
+.topPage{
+    text-align: center;
+    padding: 100px 20px;
+    background: black;
+    color: white;
+}
+
+.topPage h2{
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.topPage p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+/* Styles my button */
+.topPage button{
+    padding: 16px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+/* Styles my shoes section */
+.products{
+    padding: 60px 8%;
+}
+
+.shoePage{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Styles each individual shoe card */
+.productTeaser{
+    background: white;
+    border-radius: 10px;
+    /* the browsr cuts off any extra content that doesnt fit */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.productTeaser img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Style the shoe info */
+
+.productInfo{
+    padding: 20px;
+}
+
+.brand{
+    color: grey;
+    font-size: 12px;
+}
+
+.productInfo h3{
+    margin: 8px 0;
+}
+
+.description{
+    color: #001078;
+    margin-bottom: 15px;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.viewShoe{
+    display: inline-block;
+    padding: 10px 18px;
+    background: #001078;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.viewShoe:hover{
+    background: grey;
+}
+
